@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import First from '@/components/views/First'
-import Baidu from '@/components/views/Baidu'
+import Dianying from '@/components/Dianying/Movie'
+import Xintiao from '@/components/views'
+import Baidu from '@/components/xuexi'
 
 
 Vue.use(Router)
@@ -11,13 +11,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Dianying',
+      component: Dianying
     },
     {
-      path:'/first',
-      name:'First',
-      component:First
+      path:'/xintiao',
+      name:'Xintiao',
+      component:Xintiao
     },
     {
       path:'/baidu',

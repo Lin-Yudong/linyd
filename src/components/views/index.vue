@@ -65,7 +65,7 @@ span {
   animation: ripple 3s 1s infinite; /*引用动画ripple，持续时间3s，延迟开始时间1s，循环方式无限infinite*/
 }
 .ripple-2 {
-  animation: ripple 3s 2.5s infinite;
+  animation: ripple 3s 1.25s infinite;
 }
 .ripple-base {
   width: 120px;
