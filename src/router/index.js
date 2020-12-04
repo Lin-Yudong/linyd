@@ -1,28 +1,24 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Dianying from '@/components/Dianying/Movie'
-import Xintiao from '@/components/views'
-import Baidu from '@/components/xuexi'
+import xintiaoRouter from './xintiao'
+import baiduRouter from './baidu'
+import helloworld from './helloworld'
+import movieRoutre from './dianying/movie'
+import mineRouter from './dianying/mine'
+import cinemaRouter from './dianying/cinema'
 
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes: [
-    {
-      path: '/',
-      name: 'Dianying',
-      component: Dianying
-    },
-    {
-      path:'/xintiao',
-      name:'Xintiao',
-      component:Xintiao
-    },
-    {
-      path:'/baidu',
-      name:'Baidu',
-      component:Baidu
-    }
+    xintiaoRouter,
+    baiduRouter,
+    helloworld,
+    movieRoutre,
+    mineRouter,
+    cinemaRouter,
   ]
 })
